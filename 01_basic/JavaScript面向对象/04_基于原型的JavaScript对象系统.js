@@ -51,4 +51,14 @@ Person.prototype.getName = function () {
 var a = new Person('cc');
 console.log(a.name);
 console.log(a.getName());
-console.log(Object.getPrototypeOf(a) === Person.prototype);
+console.log(Object.getPrototypeOf(a) === Person.prototype); // true
+
+// 3.3 原型链
+/**
+ * JavaScript的真正实现来说，对象并不能说有原型，只能说对象的构造器有原型。
+ * 对于 "对象把请求委托给它自己的原型"，换句话说，对象把请求委托给它的构造器的原型。
+ * JavaScript给对象一个__proto__的隐藏属性，某个对象的__proto__属性默认指向它的构造器的原型对象。{Constructor}.prototype
+ * obj.__prototype === Constructor.prototype
+ */
+
+// 3.4 如果对象无法响应某个请求，它会把这个请求委托给它的构造器的原型
