@@ -11,3 +11,4 @@
 // Vue中的provide()允许我们向组件树传递数据，而无需drop-drill
 // inject()用于子组件，以便从父组件或者任何的组件组件中获取provide提供的data/fn
 // 除了能够provide()从父组件获取数据之外，我们provide()还可以将其提升到应用程序级别（即我们实例化 Vue 应用程序的地方）。
+
